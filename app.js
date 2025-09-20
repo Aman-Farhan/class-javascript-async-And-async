@@ -100,5 +100,5 @@ let password = document.getElementById("password");
 
 
 function register (){
-    firease.auth().createUserWithEmailAndPassword(email.value , password.value)
+    firbease.auth().createUserWithEmailAndPassword(email.value , password.value)
 }
