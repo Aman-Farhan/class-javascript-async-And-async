@@ -95,10 +95,10 @@
 
 
 
-let email = document.getElementById("email");
-let password = document.getElementById("password");
+// let email = document.getElementById("email");
+// let password = document.getElementById("password");
 
 
-function register (){
-    firebase.auth().createUserWithEmailAndPassword(email.value , password.value)
-}
+// function register (){
+//     firebase.auth().createUserWithEmailAndPassword(email.value , password.value)
+// }
