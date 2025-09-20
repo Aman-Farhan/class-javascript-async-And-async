@@ -57,19 +57,38 @@
 
 // Promise
 
-let firstAsync = new Promise(function (resolve , reject){
+// let firstAsync = new Promise(function (resolve , reject){
+//     random = Math.ceil(Math.random()*100);
+//     if (random % 2 === 0 ){
+//         reject(random);
+//     }else{
+//         reject("it is an old number");
+//     }
+//     number();
+// })
+
+//     .then(function(seccess){
+//         console.log(seccess);
+//     })
+//     .catch(function(error){
+//         console.log(error);
+//     });
+
+
+
+let firstAsync = new Promise(function (resolve,reject) {
     random = Math.ceil(Math.random()*100);
-    if (random % 2 === 0 ){
-        reject(random);
-    }else{
-        reject("it is an old number");
+    if(random % 2 === 0){
+        resolve(random);
+    }else {
+        reject("it is old number");
     }
     number();
 })
 
-    .then(function(seccess){
-        console.log(seccess);
+    .then(function (secces) {
+        console.log(secces);
     })
-    .catch(function(error){
+    .catch(function (error){
         console.log(error);
     });
